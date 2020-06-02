@@ -3,6 +3,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #222831;
+    color: #eee;
+}
+
+.title {
+    font-family: 'Fugaz One', cursive;
+    margin-top: 0;
+    padding-top: 5px;
+    font-size: 4em;
+    border-bottom: 1px solid #393e46;
 }
 
 .container {
@@ -16,8 +26,67 @@ body {
     display: flex;
 }
 
+.score {
+    align-items: center;
+    margin-top: 5px;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+.score span {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+.board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc33;
+  }
+#player-board {
+    font-size: .75rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #393e46;
+    border: none;
+    box-shadow: 0px 6px 15px 5px rgba(11, 255, 174, 0.178);
+}
+
+#computer-board {
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #393e46;
+    border: none;
+    box-shadow: 0px 5px 15px 5px rgba(11, 255, 174, 0.178);
+}
+
 .fas {
     cursor: pointer;
     font-size: 150px;
     margin: 20px;
+}
+
+.buttons button {
+    height: 75px;
+    width: 200px;
+    font-size: 2.2em;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    background: rgb(255, 249, 249);
+    border: none;
+    box-shadow: 0px 12px 25px 5px rgba(255, 106, 106, 0.178);
+}
+
+.buttons button:hover {
+    transform: scale(1.02);
+    transition: .1s;
 }
